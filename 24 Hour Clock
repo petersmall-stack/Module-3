@@ -1,0 +1,7 @@
+current_time = int(input("Enter the current time now (in hours, 0-23): "))
+wait_hours = int(input("Enter the number of hours to wait: "))
+if 0 <= current_time <= 23:
+    final_time = (current_time + wait_hours) % 24
+    print(f"\nStarting at {current_time}, after {wait_hours} hours, the time will be {final_time}.")
+else:
+    print("Invalid input for the current time. Please enter an hour between 0 and 23.")
